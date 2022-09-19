@@ -1,0 +1,29 @@
+[flake8]
+
+exclude = .*, alembic/*
+
+max-line-length = 120
+
+inline-quotes = double
+
+whitelist = whitelist.txt
+
+ignore =
+    ANN101,  # Missing type annotation for self in method
+    ANN102,  # Missing type annotation for cls in class method
+
+per-file-ignores =
+    # ignore warnings in views.py
+    # TC001, TC002, TC003: type-checking imports.
+    # B008: function calls in argument defaults.
+    src/views.py: TC001, TC002, TC003, B008
+    # ignore warnings in tests
+    # ANN - missing type hints
+    # D - missing docstrings
+    # PIE - Prefer the byte string literal
+    tests/*: ANN, D, PIE
+    # ignore warnings in security.py
+    # B008: function calls in argument defaults.
+    src/security.py: B008
+    # ignore warnings in schemas.py
+    src/schemas.py: TC001, TC002

@@ -1,0 +1,49 @@
+# Whitelist of words to be ignored by flake8
+
+# ignore filename:
+enums
+
+# ignore fastapi package name:
+fastapi
+
+# ignore method from pytest package:
+getfixturevalue
+
+# ignore argument name from sqlalchemy package:
+onupdate
+
+# ignore sqlalchemy module:
+orm
+
+# ignore argument name from sqlalchemy package:
+nullable
+
+# ignore pika package name:
+pika
+
+# ignore pydantic package name:
+pydantic
+
+# ignore rabbitmq
+rabbitmq
+
+# ignore class from sqlalchemy package:
+sessionmaker
+
+# ignore folder name in imports:
+src
+
+# ignore sqlalchemy package name:
+sqlalchemy
+
+# ignore attribute name from sqlalchemy package:
+tablename
+
+# ignore class from fastapi package:
+testclient
+
+# ignore method from pathlib:
+unlink
+
+# ignore decorator from pydantic package:
+validator
